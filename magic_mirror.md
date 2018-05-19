@@ -10,6 +10,7 @@
         - [Motion detection to turn on or off the screen](#motion-detection-to-turn-on-or-off-the-screen)
     - [Modules installation](#modules-installation)
         - [DHT sensor](#dht-sensor)
+        - [MMM-PIR-Sensor](#mmm-pir-sensor)
 
 ## Installation
 
@@ -194,4 +195,19 @@ Then apply this
 cd MMM-DHT-Sensor
 npm install electron-rebuild
 ./node_modules/.bin/electron-rebuild
+```
+
+### MMM-PIR-Sensor
+
+This module can monitor a PIR motion sensor and put your mirror to sleep.
+Only need to follow [installation steps here](https://github.com/paviro/MMM-PIR-Sensor).
+
+Configuration
+```js
+{
+    module: 'MMM-PIR-Sensor',
+    config: {
+        sensorPIN: 22,
+        powerSavingDelay: 20
+}
 ```
